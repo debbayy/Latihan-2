@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaquery.css">
+    <link rel="shortcut icon" href="/assets/favicon.svg" type="image/x-icon" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="leftside">
+        <div class="banner">
+          <div class="img">
+            <img class="profil" src="/assets/profil.webp" />
+          </div>
+          <h1>Muhammad Zawawi</h1>
+          <p>
+            <strong>Hai!</strong> perkenalkan nama saya Zawawi. Saat ini saya
+            tergabung di bootcamp Dumbways. Ini adalah project saya untuk
+            assignment pre class.
+          </p>
+        </div>
+        <div class="info">
+          <div class="detilinfo">
+            <a
+              href="https://wa.me/+6283830196355"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/wa.svg" alt="telp" style="max-height: 40px;" />
+              <h5>083830196355</h5>
+            </a>
+          </div>
+          <div class="detilinfo">
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/bd.svg" alt="telp" style="max-height: 40px;" />
+              <h5>03/01/1996</h5>
+            </a>
+          </div>
+          <div class="detilinfo">
+            <a
+              href="https://fb.me/zawawisme"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/fb.svg" alt="telp" style="max-height: 40px;" />
+              <h5>Muhammad Zawawi</h5>
+            </a>
+          </div>
+          <div class="detilinfo">
+            <a
+              href="https://instagram.com/zed378"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img src="/assets/ig.svg" alt="telp" style="max-height: 40px;" />
+              <h5>IG: @zed378</h5>
+            </a>
+          </div>
+          <div class="detilinfo">
+            <a
+              href="mailto:kembedt@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="/assets/mail.svg"
+                alt="telp"
+                style="max-height: 40px;"
+              />
+              <h5>kembedt@gmail.com</h5>
+            </a>
+          </div>
+          <div class="detilinfo">
+            <a href="#" target="_blank" rel="noopener noreferrer">
+              <img
+                src="/assets/home.svg"
+                alt="telp"
+                style="max-height: 40px;"
+              />
+              <h5>Jl. Simomulyo Baru<br>05-E/17, Surabaya</h5>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="rightside">
+        <div class="card">
+          <h2>Data Submit</h2>
+          <form>
+            <label for="name">Name :</label><br />
+            <input class="input" type="text" name="name" required /><br /><br />
+            <div class="row">
+              <div class="col" id="col1">
+                <label for="gender">Gender :</label>
+                <input type="radio" name="gender" id="male" value="Male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" value="Female" />
+                <label for="female">Female</label><br /><br />
+                <label for="birthday">Birthday :</label><br />
+                <input class="birthday" id="birthday" type="date" />
+              </div>
+              <br>
+              <div class="col" id="col2">
+                <label for="">Are you?</label>
+                <input
+                  type="checkbox"
+                  id="student"
+                  name="check"
+                  onclick="singleCheck(this)"
+                />
+                <label for="student">Student</label>
+                <input
+                  type="checkbox"
+                  id="nonStudent"
+                  name="check"
+                  onclick="singleCheck(this)"
+                />
+                <label for="nonStudent">Non Student</label><br /><br />
+                <label for="religion">Religion :</label>
+                <select id="religion">
+                  <option value=""
+                    >------ PLEASE CHOOSE AN OPTION ------</option
+                  >
+                  <option value="Islam">Islam</option>
+                  <option value="Kristen">Kristen</option>
+                  <option value="Hindu">Hindu</option>
+                  <option value="Buddha">Buddha</option>
+                  <option value="Konghucu">Konghucu</option>
+                  <option value="Kepercayaan">Kepercayaan</option>
+                </select>
+              </div>
+            </div>
+            <br />
+            <label for="summary">Summary :</label><br />
+            <textarea id="summary" rows="4" required></textarea><br /><br />
+            <div class="row">
+              <div class="col" id="col1">
+                <label for="phone">Phone :</label><br />
+                <input class="input" type="number" id="phone" required />
+              </div><br>
+              <div class="col" id="col2">
+                <label for="email">Email :</label><br />
+                <input class="input" type="email" id="email" required />
+              </div>
+            </div>
+            <br />
+            <label for="address">Address :</label><br />
+            <textarea name="address" rows="4" required></textarea><br /><br />
+            <button type="submit">SUBMIT</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
